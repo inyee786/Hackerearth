@@ -1,0 +1,43 @@
+You have been given a String 
+S
+S consisting of uppercase and lowercase English alphabets. You need to change the case of each alphabet in this String. That is, all the uppercase letters should be converted to lowercase and all the lowercase letters should be converted to uppercase. You need to then print the resultant String to output.
+
+Input Format
+The first and only line of input contains the String 
+S
+S
+
+Output Format
+Print the resultant String on a single line.
+
+
+
+program:
+#include <stdio.h>
+#include<string.h>
+ 
+int main()
+{
+    char st[100];
+    int i=0,j=0;
+    scanf("%[^\n]%*c",st);
+    
+    
+    while(st[j]!='\0')
+    {
+    	j++;
+    }
+ 
+    
+    while(st!='\0')
+    {
+    	if((int)st[i]>=65&&(int)st[i]<=90)
+    	printf("%c",st[i]+32);
+    	else
+    	printf("%c",st[i]-32);
+    	i++;
+    	if(j==i)
+    	break;
+    }
+    return 0;
+}
